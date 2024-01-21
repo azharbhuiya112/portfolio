@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AZHAR-CSE Student Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+
+  *{
+
+     margin: 0;
+     padding: 0;
+
+  }
+   body{
+
+     background-color: rgb(1, 31, 54);
+      color: white;
+      font-family:'Poppins',sans-serif ;
+
+   }
+   nav{
+        display: flex;
+        justify-content:space-around ;
+        align-items: center;
+        height: 60px; 
+        background-color: rgb(36, 15, 99);
+
+   }
+  .left{
+     font-size:2rem ;
+
+  }
+   nav ul{
+    display: flex;
+    justify-content: center;
+   }
+   nav ul li{
+    list-style: none;
+    margin: 0 23px;
+   }
+   .firstsection{
+
+    display: flex;
+    justify-content: space-around;
+    margin:23px 0;
+
+
+
+
+   }
+   .leftsection{
+    color: rgb(54, 76, 76);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    text-align: center;
+    font-size: 2rem;
+   }
+   .roundimg {
+  border-radius: 50%;
+}
+
+.clr{
+  color: rgb(190, 43, 102);
+}
+
+.git:hover{
+  background-color: rgb(219, 25, 25);
+  box-shadow: 10px 10px 10px rgba(48, 2, 2, 0.15) ;
+
+}
+.git{
+  background-color: rgb(242, 188, 188);
+  border-radius: 2rem;
+  border: none;
+  cursor:pointer;
+
+}
+
+.fb{
+  border-radius: 5%;
+}
+.fb:hover{
+  background-color: rgb(236, 236, 252);
+}
+#element{
+  color: blueviolet;
+}
+
+.secondsection{
+ 
+  max-width: 80vw;
+  margin: auto;
+}
+
+</style>
+
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Azhar's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>
+            
+            <a href="https://www.facebook.com/profile.php?id=100029991426071&mibextid=9R9pXO">
+              <img src="f.png" height="25px" class="fb">
+            </a>
+          </li>
+          <a href="https://github.com/azharbhuiya112"> <button class="git">
+            <li>GitHubLink</li></button></a>
+         
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+   <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        Hi! My Name Is <span class=clr>Azhar Uddin.. </span>
+        <br>
+        <span id="element"></span>
+      </div>
+
+      <div class="rightsection">
+       <img src="az.png.jpg" alt="html" height="150px" class="roundimg">
+       <br>
+       <span id="elementt"></span>
+      </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Student', 'CSE under graduate','Muttaqir caccu'],
+        typeSpeed: 70,
+      });
+    </script>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed('#elementt', {
+    strings: ['Its me! here', 'Azhar Uddin Bhuiyan'],
+    typeSpeed: 70,
+  });
+</script>
+<hr>
+<section class="secondsection">
+  <br>
+<br>
+<h6>What I am doing righ now</h6>
+<h1>Experience!</h1>
+<hr>
+</section>
+   </main>
+
+</body>
+</html>
