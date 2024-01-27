@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <link rel="stylesheet" href="style.css" />
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AZHAR-CSE Student Portfolio</title>
@@ -10,116 +12,21 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<style>
-
-  *{
-
-     margin: 0;
-     padding: 0;
-
-  }
-   body{
-
-     background-color: rgb(1, 31, 54);
-      color: white;
-      font-family:'Poppins',sans-serif ;
-
-   }
-   nav{
-        display: flex;
-        justify-content:space-around ;
-        align-items: center;
-        height: 60px; 
-        background-color: rgb(36, 15, 99);
-
-   }
-  .left{
-     font-size:2rem ;
-
-  }
-   nav ul{
-    display: flex;
-    justify-content: center;
-   }
-   nav ul li{
-    list-style: none;
-    margin: 0 23px;
-   }
-   .firstsection{
-
-    display: flex;
-    justify-content: space-around;
-    margin:23px 0;
-
-
-
-
-   }
-   .leftsection{
-    color: rgb(54, 76, 76);
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-right: 8px;
-    text-align: center;
-    font-size: 2rem;
-   }
-   .roundimg {
-  border-radius: 50%;
-}
-
-.clr{
-  color: rgb(190, 43, 102);
-}
-
-.git:hover{
-  background-color: rgb(219, 25, 25);
-  box-shadow: 10px 10px 10px rgba(48, 2, 2, 0.15) ;
-
-}
-.git{
-  background-color: rgb(242, 188, 188);
-  border-radius: 2rem;
-  border: none;
-  cursor:pointer;
-
-}
-
-.fb{
-  border-radius: 5%;
-}
-.fb:hover{
-  background-color: rgb(236, 236, 252);
-}
-#element{
-  color: blueviolet;
-}
-
-.secondsection{
- 
-  max-width: 80vw;
-  margin: auto;
-}
-
-</style>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
 </head>
 <body>
-  <header>
+  <header class="header">
     <nav>
       <div class="left">Azhar's Portfolio</div>
       <div class="right">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>
-            
-            <a href="https://www.facebook.com/profile.php?id=100029991426071&mibextid=9R9pXO">
-              <img src="f.png" height="25px" class="fb">
-            </a>
-          </li>
-          <a href="https://github.com/azharbhuiya112"> <button class="git">
+          <a href="#home" class="aa" >Home</a>
+          <a href="#about" class="aa">About</a>
+          <a href="#skills" class="aa">Skills</a>
+          <a href="#link" class="aa">Link</a>    
+          <a href="#project" class="aa">project</a>      <a href="https://github.com/azharbhuiya112"> <button class="git">
             <li>GitHubLink</li></button></a>
          
         </ul>
@@ -127,8 +34,10 @@
     </nav>
 
   </header>
+
+
    <main>
-    <section class="firstsection">
+    <section class="home"  id="home">
       <div class="leftsection">
         Hi! My Name Is <span class=clr>Azhar Uddin.. </span>
         <br>
@@ -136,7 +45,7 @@
       </div>
 
       <div class="rightsection">
-       <img src="az.png.jpg" alt="html" height="150px" class="roundimg">
+       <img  src="az.png.jpg" alt="html" height="150px" class="roundimg">
        <br>
        <span id="elementt"></span>
       </div>
@@ -148,6 +57,7 @@
         typeSpeed: 70,
       });
     </script>
+    </main>
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script>
@@ -156,15 +66,204 @@
     typeSpeed: 70,
   });
 </script>
-<hr>
-<section class="secondsection">
+
+
+  
+   <!--about section-->
+<section class="about" id="about"> 
+  <div class="about-img">
+    <img src="azharcoat.jpg" alt=""  height="400px" class="rounding1">
+  </div>
+  <div class="about-content">
+    <h2 class="heading">about</h2>
+    <h3>Portfolio maker</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+      Magnam ipsa, doloremque sint pariatur atque a! Doloribus harum repudiandae vero corporis
+       repellendus molestiae delectus aspernatur incidunt sapiente sequi dolores iure veritatis
+        in cumque consequatur, ipsum fugit earum laborum at. Expedita neque atque consectetur sequi fugiat nam corrupti!</p>
+     <button href="#" class="btn">Read more</button>
+  </div>
+ 
+</section>
+
+
+
+<section class="services" id="skills">
+   <h2 class="heading">My<span>Skills</span></h2>
+   <div class="services-container">
+    <div class="service-box">
+      <i class='bx bx-code-alt' ></i>
+      <h3>Web developer</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Repellat rerum at suscipit tempore ad,
+          voluptates illum optio, porro facere corrupti modi quos perspiciatis vel earum natus,
+           nihil reprehenderit? Officiis, natus!</p>
+           <button href="#" class="btn">Read more</button>
+    
+    </div>
+    <div class="service-box">
+      <i class='bx bx-paint'></i>
+      <h3>Graphics designer</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Repellat rerum at suscipit tempore ad,
+          voluptates illum optio, porro facere corrupti modi quos perspiciatis vel earum natus,
+           nihil reprehenderit? Officiis, natus!</p>
+           <button href="#" class="btn">Read more</button>
+    
+    </div>
+    <div class="service-box">
+      <i class='bx bxl-sketch'></i>
+      <h3>Digital Logic design</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Repellat rerum at suscipit tempore ad,
+          voluptates illum optio, porro facere corrupti modi quos perspiciatis vel earum natus,
+           nihil reprehenderit? Officiis, natus!</p>
+           <button href="#" class="btn">Read more</button>
+    
+    </div>
+    <div class="service-box">
+      <i class='bx bx-code'></i>
+      <h3>Coding</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Repellat rerum at suscipit tempore ad,
+          voluptates illum optio, porro facere corrupti modi quos perspiciatis vel earum natus,
+           nihil reprehenderit? Officiis, natus!</p>
+           <button href="#" class="btn">Read more</button>
+    
+    </div>
+    
+
+   </div>
+
+
+
+</section>
+
+<section class="project" id="project">
+ <h2 class="heading">Latest <span>Project</span></h2>
+ <div class="project-container">
+
+  <div class="project-box">
+   <img src="web.png" alt="" width="50%" float="left">
+   <div class="project-layer">
+    <h4>vehicle manahement</h4>
+    <p>bugichugi</p>
+    <a href="#"><i class='bx bx-link-external'></i></a>
+   </div>
+ </div>
+
+ <div class="project-box">
+  <img src="vehicle.png" alt="" width="50%" float="left">
+  <div class="project-layer">
+   <h4>HouseHold Service</h4>
+   <p>bugichugi</p>
+   <a href="https://github.com/azharbhuiya112/Vehicle-Bus_Seat_management_system"><i class='bx bx-unlink'></i></a>
+  </div>
+</div>
+
+<div class="project-box">
+  <img src="housegold.png" alt=""width="50%" float="left">
+  <div class="project-layer">
+   <h4>HouseHold Service</h4>
+   <p>Advanced Programming project</p>
+   <a href="https://github.com/azharbhuiya112/Android-project-home-solutions"><i class='bx bx-unlink'></i></a>
+  </div>
+</div>
+
+<div class="project-box">
+  <img src="pic4.jpg" alt="" width="50%" float="left">
+  <div class="project-layer">
+   <h4>HouseHold Service</h4>
+   <p>bugichugi</p>
+   <a href="#"><i class='bx bx-unlink'></i></a>
+  </div>
+</div>
+ 
+ <div class="project-box">
+  <img src="pic5.jpg" alt="" width="50%" float="left">
+  <div class="project-layer">
+   <h4>HouseHold Service</h4>
+   <p>bugichugi</p>
+   <a href="#"><i class='bx bx-unlink'></i></a>
+  </div>
+</div>
+
+<div class="project-box">
+  <img src="pic6.jpg" alt="" width="50%" float="left">
+  <div class="project-layer">
+   <h4>HouseHold Service</h4>
+   <p>bugichugi</p>
+   <a href="#"><i class='bx bx-unlink'></i></a>
+  </div>
+</div>
+
+ </div>
+
+
+
+   
+</section>
+
+<section class="secondsection" id="link">
   <br>
 <br>
 <h6>What I am doing righ now</h6>
 <h1>Experience!</h1>
-<hr>
+ 
+<section class="home" id="home">
+  <div class="social-media">
+    <a class="fb" href="https://www.facebook.com/profile.php?id=100029991426071&mibextid=9R9pXO"><i class='bx bxl-facebook-circle' > </i>
+
+    </a>
+    <a href="#"> <i class='bx bxl-instagram-alt'></i></a>
+    <a href="https://mail.google.com/mail/u/0/#inbox"><i class='bx bxl-gmail'></i></a>
+  </div>
+  <button href="#" class="btnn">download c.v</button>
+  
+ </section>
 </section>
-   </main>
+
+</main>
+
+<!-- contact with me-->
+<section class="contact" id="contact">
+  <h2 class="heading">
+    Contact<span>Me</span>
+  </h2>
+
+  <form action="#">
+    <div class="input-box">
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email Address">
+
+    </div>
+    <div class="input-box">
+      <input type="number" placeholder="Mobile Number">
+      <input type="text" placeholder="Email Subject">
+
+    </div>
+    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
+
+ <!--footer section-->
+ <footer class="footer">
+  <div class="footer-text">
+    <p>
+      all rights reserved by azhar
+    </p>
+  </div>
+  <div class="footer-iconTop">
+    <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+  </div>
+ </footer>
+
+ <!--custom js-->
+
+ <script src="script.js">
+
+ </script>
 
 </body>
 </html>

@@ -1,0 +1,700 @@
+*{
+
+  margin: 0;
+  padding: 0;
+
+ 
+}
+body{
+
+background-color: rgb(3, 17, 27);
+color: white;
+font-family:'Poppins',sans-serif ;
+
+}
+nav{
+     display: flex;
+     justify-content:space-around ;
+     align-items: center;
+     height: 40px; 
+     
+     padding: 5px;
+}
+nav a {
+         color: rgb(28, 2, 130);
+         text-decoration: none;
+         padding: 10px 20px; /* Adjust the padding to create space between items */
+         margin-right: 10px; /* Adjust the margin to create space between items */
+         display: inline-block;
+     }
+
+     .header{
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       padding: 2rem 9%;
+       background: #13523a;
+       justify-content: space-between;
+       z-index: 100;
+
+     }
+
+
+     .header.sticky{
+
+      border-bottom: .1rem solid rgba(0,0,0,.2) ;
+
+
+     }
+
+
+.left{
+  font-size:3rem ;
+  color: rgb(15, 15, 13);
+
+}
+.right{
+  font-size:1.3rem ;
+}
+nav ul{
+ display: flex;
+ justify-content: center;
+}
+nav ul li{
+ list-style: none;
+ margin: 0 23px;
+}
+
+.btn{
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 1rem;
+}
+   .btn:hover{
+    background-color: rgb(219, 25, 25);
+    box-shadow: 10px 10px 10px rgba(194, 57, 57, 0.15) ;
+    
+    }
+
+
+.aa:hover{
+color: #780606;
+}
+.active{
+  color: #04AA6D;
+}
+.home{
+
+ display: flex;
+ justify-content: space-around;
+ margin:23px 0;
+ padding: 150px; /* Adjust the padding to create the desired gap */
+ margin-bottom: 200px; 
+
+
+
+}
+.leftsection{
+ color: rgb(54, 76, 76);
+ border: none;
+ border-radius: 2px;
+ cursor: pointer;
+ margin-right: 8px;
+ text-align: center;
+ font-size: 2rem;
+}
+.roundimg {
+border-radius: 50%;
+}
+
+
+.clr{
+color: rgb(190, 43, 102);
+}
+
+.git:hover{
+background-color: rgb(219, 25, 25);
+box-shadow: 10px 10px 10px rgba(48, 2, 2, 0.15) ;
+
+}
+.git{
+background-color: rgb(242, 188, 188);
+border-radius: 2rem;
+border: none;
+cursor:pointer;
+
+}
+
+.fb{
+border-radius: 50%;
+}
+.fb:hover{
+background-color: rgb(236, 236, 252);
+}
+#element{
+color: blueviolet;
+}
+
+.secondsection{
+
+max-width: 80vw;
+margin: auto;
+}
+.secondsection{
+
+
+background-color:rgb(47, 3, 33) ;
+padding: 150px; /* Adjust the padding to create the desired gap */
+margin-bottom: 150px; 
+
+}
+
+.social-media a{
+
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 4rem;
+height: 4rem;
+background: transparent;
+border: .2rem ;
+border-radius: 50%;
+font-size: 2 rem;
+color: blanchedalmond;
+margin: 3 rem 1.5;
+transition: .5s;
+}
+
+.social-media a:hover{
+background-color:  rebeccapurple;
+color:pink;
+box-shadow: 0 0 0.5rem var(--main-color);
+
+}
+
+
+.btnn{
+ background-color: rgb(242, 188, 188);
+ border-radius: 4rem;
+ border: none;
+ cursor:pointer;
+
+}
+.btnn:hover{
+background-color: rgb(101, 87, 87);
+box-shadow: 10px 10px 10px rgba(48, 2, 2, 0.15) ;
+
+}
+
+.about{
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap:2rem;
+
+}
+.about{
+background-color: rgb(13, 43, 43);
+display: flex;
+justify-content: space-around;
+
+padding: 150px; /* Adjust the padding to create the desired gap */
+margin-bottom: 10px; 
+
+
+
+}
+.about{
+
+border: none;
+border-radius: 2px;
+cursor: pointer;
+text-align: center;
+font-size: 2rem;
+
+
+
+}
+.about-content  p{
+font-size: 1rem;
+margin: 1rem 0 3rem;
+}
+
+
+.service{
+
+background-color: rgb(17, 24, 24);
+display: flex;
+justify-content: space-around;
+
+
+
+
+ 
+
+
+}
+.services{
+
+background-color: rgb(10, 2, 17);
+border: none;
+ border-radius: 2px;
+ cursor: pointer;
+ text-align: center;
+ font-size: 2rem;
+ padding: 180px; /* Adjust the padding to create the desired gap */
+ margin-bottom: 10px; 
+
+
+
+}
+
+.services-container{
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 1rem;
+
+}
+
+.services-container .service-box{
+flex: 1 1 1rem;
+background-color: rgb(41, 42, 44);
+padding: 1rem 1rem 1rem;
+border-radius: 2rem;
+text-align: center;
+border: .2rem solid black;
+transition: .5 ease;
+
+
+
+
+}
+
+.services-container .service-box:hover{
+
+border-color: aqua;
+transform: scale(1.02);
+
+}
+.service-box h3{
+
+font-size: 2rem;
+
+}
+
+.service-box  p{
+font-size: 1rem;
+margin: 1rem 0 3rem;
+}
+
+
+
+
+.heading{
+
+text-align: center;
+
+
+}
+
+
+
+.layer .p:hover{
+border-color: rgb(255, 0, 98);
+transform: scale(1.02);
+}
+.layer .s:hover{
+border-color: rgb(255, 0, 98);
+transform: scale(1.02);
+background-color: brown;
+}
+
+
+
+
+.project
+{
+background-color: rgb(15, 3, 40);
+padding-bottom: 100px;
+padding-top: 100px;
+margin: 1rem 0 3rem;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 1rem;
+margin-bottom: 10px;
+margin-top: 10px;
+
+}
+
+.heading{
+
+ color: rgb(182, 110, 9);
+
+
+}
+
+.project h2{
+margin-bottom: 4rem;
+
+
+}
+.project-container{
+
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+align-items: center;
+gap: 2.5rem;
+}
+.project-container .project-box{
+position: relative;
+height: 200px;
+border-radius: 2rem;
+box-shadow: 0 0 1rem rgb(98, 2, 98);
+overflow: hidden;
+display: flex;
+}
+.project-box img{
+width: 100%;
+
+}
+
+.project-box:hover img{
+
+transform: scale(1.1);
+
+
+
+
+}
+.project-box .project-layer{
+
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(rgba(0,0,0,.1),rgb(30, 210, 237));
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+padding: 0 4rem;
+transform: translateY(100%);
+transition: .5s ease;
+}
+
+.project-box:hover .project-layer
+{
+transform: translateY(0);
+
+
+}
+.project-layer h4
+{
+font-size: 1.1rem;
+}
+.project-layer p{
+font-size: 1.6rem;
+margin: .3rem 0 1rem;
+}
+.project-layer a
+{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 5rem;
+height: 5rem;
+background: var(--text-color-light);
+border-radius: 50%;
+
+}
+
+
+/*contactttttttttttt*/
+
+.contact h2{
+   margin-bottom: 3rem;
+}
+
+.contact form{
+   max-width: 60rem;
+   margin: 1rem auto;
+   text-align: center;
+   margin-bottom: 3rem;
+
+}
+
+.contact form .input-box{
+   
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+
+width:100%;
+padding: 1.5rem;
+font-size: 1.6rem;
+color: rgb(5, 57, 40);
+background: rgb(168, 182, 204);
+border-radius: .8rem;
+margin: .7rem 0;
+  
+}
+.contact form .input-box input{
+  width:45%
+}
+.contact form textarea{
+
+   resize:  none ;
+
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: rgb(73, 70, 70);
+
+}
+.footer-text p{
+    font-size: 1.6rem;
+} 
+
+.footer-iconTop a{
+   
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+   background: #3fa07c;
+   border-radius:  .8rem;
+   transition: .5s ease;
+   
+
+}
+.footer-iconTop a:hover{
+
+  box-shadow: 0 0 1rem rgb(78, 84, 91);
+}
+.footer-iconTop a i{
+
+   font-size: 2.4rem;
+   color:#033221;
+
+}
+
+/*BREAKPOINTS*/
+@media (max-width: 1200px)
+  {   
+    html{
+
+     font-size: 55%;
+
+
+    }
+
+}
+@media (max-width: 991px)
+  {   
+    .header{
+
+     padding: 2rem 3%;
+
+
+    }
+    section{
+
+       padding: 10rem 3% 2rem;
+    
+    }
+    .footer{
+
+      padding: 2rem 3%;
+    }
+  
+}
+
+@media(max-width: 768px){
+  #menu-icon{
+
+      display: block;
+
+  }
+  .navbar{
+
+     position: absolute;
+     top: 100%;
+     left: 0%;
+     width: 100%;
+     padding: 1rem 3%;
+     background: #033221;
+     border-top: .1rem solid rebeccapurple;
+     box-shadow: 0 .5rem 1rem rgba(0, 0,0, 2);
+     display: none;
+
+
+  }
+
+  .navbar .active{
+        display:block;
+  }
+
+  .navbar a{
+
+     display: block;
+     font-size: 2rem;
+     margin: 3rem 0;
+
+  }
+
+}
+
+/*contact
+.contact__container {
+row-gap: 3rem;
+}
+
+.contact__information {
+display: flex;
+margin-bottom: var(--mb-2);
+}
+
+.contact__icon {
+font-size: 1.5rem;
+color: var(--first-color);
+margin-right: var(--mb-0-75);
+}
+
+.content__title {
+font-size: var(--h3-font-size);
+font-weight: var(--font-medium);
+}
+
+.contact__subtitle {
+font-size: var(--small-font-size);
+color: var(--text-color-light);
+}
+
+.contact__content {
+background-color: rgb(223, 181, 181);
+border-radius: 0.5rem;
+padding: 0.75rem 1rem 0.25rem;
+}
+
+.contact__label {
+font-size: var(--smaller-font-size);
+color: blueviolet;
+}
+
+.contact__input {
+width: 100%;
+background-color:white;
+color: bisque;
+font-family: var(--body-font);
+font-size: var(--normal-font-size);
+border: none;
+outline: none;
+padding: 0.25rem 0.5rem 0.5rem 0;
+}
+.button--flex {
+display: inline-flex;
+align-items: center;
+transition: 0.3s;
+}
+<section class="contact section" id="contact">
+  <h2 class="section__title">Contact me</h2>
+  <span class="section__subtitle">Get in touch</span>
+
+  <div class="contact__container container grid">
+      <div>
+          <div class="contact__information">
+              <i class="uil uil-phone-alt contact__icon"></i>
+
+              <div>
+                <i class='bx bxs-phone-call'></i>
+                  <h3 class="contact__title">Call me</h3>
+                  <span class="contatc__subtitle">01885375902</span>
+              </div>
+          </div>
+
+          <div class="contact__information">
+            
+
+              <div>
+                <i class='bx bx-mail-send'></i>
+                  <h3 class="contact__title">E-mail</h3>
+                  <span class="contatc__subtitle">josephite@gmail.com</span>
+              </div>
+          </div>
+
+          <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <i class='bx bx-location-plus'></i>
+                  <h3 class="contact__title">Location</h3>
+                  <span class="contatc__subtitle">KUET,DHAKA</span>
+              </div>
+          </div>
+      </div>
+
+      <form action="" class="contact__form grid">
+          <div class="contact__inputs grid">
+              <div class="contact__content">
+                  <label for="" class="contact__label">Name</label>
+                  <input type="text" class="contact__input">
+              </div>
+
+              <div class="contact__content">
+                  <label for="" class="contact__label">E-mail</label>
+                  <input type="email" class="contact__input">
+              </div>
+          </div>
+
+          <div class="contact__content">
+              <label for="" class="contact__label">Subject</label>
+              <input type="text" class="contact__input">
+          </div>
+
+          <div class="contact__content">
+              <label for="" class="contact__label">Description</label>
+              <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+          </div>
+
+          <div>
+              <button class="button--flex">
+                  Send message
+              </button>
+                  <i class="uil uil-message button__icon"></i>
+              </a>
+          </div>
+      </form>
+  </div>
+
+</section>
+</main>
+
+ 
+
+
+</body>
+</html>*/
