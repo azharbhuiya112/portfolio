@@ -401,19 +401,33 @@ box-shadow: 0 0 0.5rem var(--main-color);
 }
 
 
-.btnn{
- background-color: rgb(242, 188, 188);
- border-radius: 15%;
+.btnn1{
+ background-color: rgb(176, 40, 122);
+ border-radius: 10%;
  border: none;
  cursor:pointer;
  position: flex;
-padding: 2px;
+padding: 5px;
 }
-.btnn:hover{
-background-color: rgb(200, 84, 84);
-box-shadow: 10px 10px 10px rgba(48, 2, 2, 0.15) ;
+.btnn1:hover{
+background-color: rgb(16, 13, 86);
+box-shadow: 10px 10px 10px rgba(8, 200, 234, 0.15) ;
 
 }
+
+.btnn{
+  background-color: rgb(176, 40, 122);
+  border-radius: 10%;
+  border: none;
+  cursor:pointer;
+  position: flex;
+ padding: 5px;
+ }
+ .btnn:hover{
+ background-color: rgb(12, 7, 136);
+ box-shadow: 10px 10px 10px rgba(25, 173, 199, 0.15) ;
+ 
+ }
 
 section.section-show {
   top: 100px;
@@ -846,22 +860,25 @@ padding: 90px;
   
   .portfolio{
 
-margin: 60px;
-  }
+    margin: 30px;
+      }
+    
+      .portfolio-container{
+        display: flex;
+    
+    align-items: center;
+    
+    margin-bottom: 30px;
+        flex: 0 0 30%;
+    max-width: 100%;
+      }
+    
 
-  .portfolio-container{
-    display: flex;
-
-align-items: center;
-
-margin-bottom: 30px;
-    flex: 0 0 30%;
-max-width: 100%;
-  }
-
-  .portfolio .portfolio-item {
-    width: 400px;
-  }
+.portfolio-item {
+    width: 0%; /* Adjust width as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    text-align: center; /* Optional: Center align the content */
+}
   
   .portfolio #portfolio-flters {
     padding: 0;
@@ -889,7 +906,7 @@ max-width: 100%;
   
   .portfolio #portfolio-flters li:hover,
   .portfolio #portfolio-flters li.filter-active {
-    color: #149ddd;
+    color: #091013;
   }
   
   .portfolio #portfolio-flters li:last-child {
@@ -1019,7 +1036,14 @@ margin: 0px;
   .portfolio-details .portfolio-description p {
     padding: 0;
   }
-  
+  .pic100{
+
+       height: 60%;
+       width:60%
+       
+
+
+  }
 
 /*contactttttttttttt*/
 
@@ -1427,5 +1451,127 @@ transition: 0.3s;
   .col-md-6 {
     flex: 0 0 auto;
     width: 50%;
+  }
+}
+
+
+
+@media (max-width:1199px)
+{
+  .aside
+  {
+    left: -270px;
+  }
+  .main-content
+  {
+    padding-left: 0;
+  }
+  .about .about-content .personal-info .info-item p span
+  {
+    display: block;
+    margin-left: 0;
+  }
+}
+@media (max-width:1148px) {
+
+  .contact .contact-info-item,
+  .portfolio .portfolio-item,
+  .service .service-item
+  {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+ 
+  .home .home-info
+  {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+ .img-fluid {
+  display: none;
+}
+}
+@media (max-width:815px)
+{
+  .about .about-content .experience,
+  .about .about-content .education,
+  .about .about-content .skills,
+  .about .about-content .personal-info
+  {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width:771px)
+{
+  .portfolio .portfolio-item,
+  .service .service-item
+  {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width:1184px)
+{.about .about-content{
+     flex: 0 0 100%;
+max-width: 100%;
+ }
+}
+
+@media (max-width:551px)
+{.about .about-content .personal-info .info-item,
+  .contact .contact-info-item
+  {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width:441px)
+{
+  .contact .contact-form .form-item
+  {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .portfolio .portfolio-item {
+      flex:0 0 100%;
+      max-width:100%;
+  
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .portfolio .portfolio-wrap {
+    border-radius: 10px;
+    box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  .portfolio #portfolio-flters li {
+    margin: 0 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .portfolio .portfolio-item {
+    margin-bottom: 20px;
+  }
+
+  .portfolio .portfolio-wrap {
+    border-radius: 12px;
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .portfolio .portfolio-wrap .portfolio-links a {
+    font-size: 22px;
   }
 }
